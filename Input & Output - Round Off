@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float f;
+    scanf("%f",&f);
+    int n1=ceil(f),n2=floor(f),n=f;
+    printf("%d\n%d\n%d",n,n1,n2);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
