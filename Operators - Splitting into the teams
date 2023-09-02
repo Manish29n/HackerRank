@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,t;
+    scanf("%d%d",&n,&t);
+    printf("The number of friends in each team is %d and left out is %d",n/t,n%t);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
