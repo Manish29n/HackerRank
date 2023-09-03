@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int x,y;
+    scanf("%d%d",&x,&y);
+    int d=(x-3>y-4)?x-3:y-4;
+    printf("%d",d);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
