@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,x,y,l,b,p;
+    scanf("%d%d%d",&n,&x,&y);
+    l=(int)x*0.01*n;
+    b=(int)(n-l)*0.01*y;
+    p=(n-l-b)/3;
+    printf("%d\n%d\n%d",l,b,p);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
