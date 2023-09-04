@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int d1,c1,d2,c2,ds=0,cs=0;
+    scanf("%d%d%d%d",&d1,&c1,&d2,&c2);
+    ds=d1+d2;
+    ds+=(c1+c2)/100;
+    cs=(c1+c2)%100;
+    printf("%d\n%d",ds,cs);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
