@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int m,r,d,t;
+    scanf("%d%d%d",&m,&r,&d);
+    if(m>=1&&m<=12){
+        if(m==4||m==6||m==5||m==11||m==12)
+            t=(int)((r+r*0.2)*d);
+        else
+            t=(int)(r*d);
+        printf("%d",t);
+    }
+    else    
+        printf("Invalid Input");
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
