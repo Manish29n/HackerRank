@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int w[7],i,t=0;
+    float p;
+    for(i=0;i<7;i++){
+        scanf("%d",&w[i]);
+        if(i==0){
+            if(w[i]>8){
+                p=(w[i]*100);
+                t=t+(int)(p+p*0.5);
+            }
+            else{
+                p=w[i]*100;
+                t=t+(int)(p+p*0.5);
+            }
+        }
+        else if(i==6){
+            if(w[i]>8){
+                p=(w[i]*100);
+                t=t+(int)(p+p*0.25);
+            }
+            else{
+                p=w[i]*100;
+                t=t+(int)(p+p*0.25);
+            }
+        }
+        else{
+            if(w[i]>8){
+                p=((8*100)+((w[i]-8)*115));
+                t=t+(int)p;
+            }
+            else{
+                p=w[i]*100;
+                t=t+(int)p;
+            }
+        }
+    }
+    printf("%d",t);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
