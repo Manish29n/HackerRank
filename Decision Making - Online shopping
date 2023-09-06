@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int f[3],s[3],a[3],i,ft,st,at;
+    for(i=0;i<3;i++)
+        scanf("%d",&f[i]);
+    for(i=0;i<3;i++)
+        scanf("%d",&s[i]);
+    for(i=0;i<3;i++)
+        scanf("%d",&a[i]);
+    ft=(int)(f[0]-f[0]*(f[1]*0.01)+f[2]);
+    printf("In Flipkart: Rs.%d\n",ft);
+    st=(int)(s[0]-s[0]*(s[1]*0.01)+s[2]);
+    printf("In Snapdeal: Rs.%d\n",st);
+    at=(int)(a[0]-a[0]*(a[1]*0.01)+a[2]);
+    printf("In Amazon: Rs.%d\n",at);
+    printf("Choose %s",(at<st)?((at<ft)?"Amazon":"Flipkart"):((st<ft)?"Snapdeal":"Flipkart"));
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
