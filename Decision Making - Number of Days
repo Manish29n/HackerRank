@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,m;
+    scanf("%d%d",&n,&m);
+    if((m<=7&&m%2!=0)||(m>=8&&m%2==0))
+        printf("31 Days");
+    else if(m==2)
+        if(n%400==0||(n%4==0&&n%100!=0))
+            printf("29 Days");
+        else
+            printf("28 Days");
+    else
+        printf("30 Days");
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
