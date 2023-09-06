@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,s=0,rem;
+    scanf("%d",&n);
+    while(n){
+        rem=n%10;
+        s=s*10+rem;
+        n/=10;
+    }
+    printf("%d",s);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
