@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int a, y, i, f;
+    float p, at;
+
+    // Input
+    scanf("%d%d%d%d%f%f", &a, &y, &i, &f, &p, &at);
+
+    // Check eligibility
+    if(f>2&&p>=80&&at>=90&&(i<=200000||i<250000)&&a>=18&&a<21&&y>=2021)
+        printf("Partially Eligible");
+    else if(i>200000&&i<250000&&a>=18&&a<21&&y>=2021&&(f<=2||f>2)&&p>=80&&at>=90)
+        printf("Partially Eligible");
+    else if (a >= 18 && a < 21 && y >= 2021 && i <= 200000 && f <= 2 && p >= 60 && at >= 80) {
+        printf("Eligible");
+    } else {
+        printf("Not Eligible");
+    }
+
+    return 0;
+}
