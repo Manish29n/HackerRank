@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int b,r,s,o;
+    scanf("%d%d%d%d",&b,&r,&s,&o);
+    int t=b/6;
+    float ol=o/6+(o%6)*0.1;
+    printf("%d\n",t);
+    printf("%.1f\n",ol);
+    printf("%.1f\n",s/(ol));
+    printf("%.1f\n",(float)r/(b/6));
+    printf("%s",(s/(o/6)>r/(b/6))?"Eligible to Win":"Not Eligible to Win");
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
