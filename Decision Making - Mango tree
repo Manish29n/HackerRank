@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int i,j,t,k,l,c=0;
+    scanf("%d%d%d",&i,&j,&t);
+    for(k=1;k<=i;k++){
+        for(l=1;l<=j;l++){
+            c++;
+            if(c==t){
+                if(k==1||l==1||l==j)
+                    printf("Yes");
+                else
+                    printf("No");
+                break;
+            }
+        }
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
