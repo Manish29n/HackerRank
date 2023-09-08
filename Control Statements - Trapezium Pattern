@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int two(int n){
+    if(n==1)
+        return 2;
+    return 2*n+two(n-1);
+}
+int main() {
+    int n,i,j;
+    scanf("%d",&n);
+    int t=two(n),k=0,f=1,l=t;
+    for(i=n;i>=1;i--){
+        for(j=1;j<=k*2;j++)
+            printf("-");
+        for(j=1;j<=i;j++){
+            printf("%d",f);
+            printf("*");
+            f++;
+        }
+        for(j=i-1;j>=0;j--){
+            printf("%d",l-j);
+            if(j!=0)
+                printf("*");
+        }
+        l-=i;
+        printf("\n");
+        k++;
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
