@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b,c,t;
+    scanf("%d%d%d",&a,&b,&c);
+    printf("The treasure is in the box which has the number %d\n",(a>b)?(a<c)?a:c:(b<c)?b:c);
+    while(b){
+        t=b;
+        b=a%b;
+        a=t;
+    }
+    while(c){
+        t=c;
+        c=a%c;
+        a=t;
+    }
+    printf("The code to open the box is %d",a);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
