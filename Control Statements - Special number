@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include<stdbool.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+bool specialnum(int n){
+    int a,b,t=n;
+    a=n%10;
+    n/=10;
+    b=n%10;
+    int sum,prod;
+    sum=a+b;
+    prod=a*b;
+    return (sum+prod==t)?true:false;
+}
+int main() {
+
+    int n,m;
+    scanf("%d%d",&n,&m);
+    for(int i=n;i<=m;i++){
+        if(specialnum(i)){
+            printf("%d\n",i);
+        }
+    }
+    return 0;
+}
